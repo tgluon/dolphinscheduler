@@ -32,10 +32,10 @@ spring:
     caffeine:
       spec: maximumSize=100,expireAfterWrite=300s,recordStats
   datasource:
-    driver-class-name: org.postgresql.Driver
-    url: jdbc:postgresql://127.0.0.1:5432/dolphinscheduler
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://127.0.0.1:3306/dolphinscheduler?useUnicode=true&characterEncoding=UTF-8
     username: root
-    password: root
+    password: Dinky@1234567!
     hikari:
       connection-test-query: select 1
       minimum-idle: 5
@@ -152,7 +152,7 @@ spring:
     driver-class-name: com.mysql.cj.jdbc.Driver
     url: jdbc:mysql://127.0.0.1:3306/dolphinscheduler
     username: root
-    password: root
+    password: Dinky@1234567!
   quartz:
     properties:
       org.quartz.jobStore.driverDelegateClass: org.quartz.impl.jdbcjobstore.StdJDBCDelegate
